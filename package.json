@@ -1,0 +1,51 @@
+{
+  "name": "checking-account-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/host.js",
+  "scripts": {
+    "coverage": "nyc npm run test",
+    "test": "mocha ./src/**/*-spec.js --require babel-core/register",
+    "lint": "eslint . --ext .js --ext .jsx --ignore-path .gitignore",
+    "build:dev": "webpack",
+    "build:release": "webpack -p",
+    "start": "npm run build:dev && node ./dist/host.js",
+    "dev:start": "forever start --watch --watch-dir src/api -c \"node --require babel-core/register --require babel-polyfill\" ./src/host.js",
+    "dev:stop": "forever stop src/host.js",
+    "dev": "npm run dev:start & webpack-dev-server --inline --hot --open --config ./spec/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios-mock-adapter": "^1.7.1",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-async-to-generator": "^6.5.0",
+    "babel-plugin-transform-class-properties": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.16.0",
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "eslint": "^3.8.1",
+    "eslint-loader": "^1.6.0",
+    "forever": "^0.15.2",
+    "html-webpack-plugin": "^2.24.0",
+    "luca-spec-bootstrapper": "^1.0.0",
+    "mocha": "^3.2.0",
+    "mocha-loader": "^1.0.0",
+    "nyc": "^10.0.0",
+    "webpack": "^2.2.0-rc.4",
+    "webpack-dev-server": "^2.2.0-rc.0",
+    "webpack-node-externals": "^1.5.4"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "babel-polyfill": "^6.5.0",
+    "common-errors": "^1.0.0",
+    "express": "^4.14.0",
+    "express-async-wrap": "^1.0.0",
+    "luca-api-initializer": "^1.0.0",
+    "luca-couchdb-synchronizer": "^1.0.1",
+    "luca-service-registry-library": "^1.2.4"
+  }
+}
