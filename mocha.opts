@@ -1,0 +1,3 @@
+src/**/*-spec.js
+--reporter doc
+--require babel-core/register

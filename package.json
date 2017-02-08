@@ -5,7 +5,7 @@
   "main": "src/host.js",
   "scripts": {
     "coverage": "nyc npm run test",
-    "test": "mocha ./src/**/*-spec.js --require babel-core/register",
+    "test": "mocha --opts mocha.opts",
     "lint": "eslint . --ext .js --ext .jsx --ignore-path .gitignore",
     "build:dev": "webpack",
     "build:release": "webpack -p",
