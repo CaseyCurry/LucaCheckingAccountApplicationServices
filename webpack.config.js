@@ -1,6 +1,5 @@
 "use strict";
 
-const nodeExternals = require("webpack-node-externals");
 const path = require("path");
 
 module.exports = [{
@@ -12,7 +11,6 @@ module.exports = [{
     path: path.join(__dirname, "dist"),
     filename: "host.js"
   },
-  externals: [nodeExternals()],
   module: {
     rules: [{
       enforce: "pre",

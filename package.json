@@ -35,8 +35,7 @@
     "mocha-loader": "^1.0.0",
     "nyc": "^10.0.0",
     "webpack": "^2.2.0-rc.4",
-    "webpack-dev-server": "^2.2.0-rc.0",
-    "webpack-node-externals": "^1.5.4"
+    "webpack-dev-server": "^2.2.0-rc.0"
   },
   "dependencies": {
     "axios": "^0.15.3",
