@@ -1,22 +1,20 @@
 pipeline {
   agent any
   stages {
-    stage("build") {
-      node {
-        steps {
-          echo "building"
-          checkout scm
-          sh "pwd"
-          sh "ls"
-        }
+    stage("Build") {
+      steps {
+        echo "building"
+        checkout scm
+        sh "pwd"
+        sh "ls"
       }
     }
-    stage("test") {
+    stage("Test") {
       steps {
         echo "testing"
       }
     }
-    stage("package") {
+    stage("Package") {
       steps {
         echo "packaging"
       }
