@@ -21,8 +21,5 @@ node {
     always {
       echo "Hello from your pipeline"
     }
-    failure {
-      echo "I failed"
-    }
   }
 }
