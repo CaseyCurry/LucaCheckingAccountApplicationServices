@@ -1,9 +1,14 @@
-node {
+pipeline {
   agent any
   stages {
     stage("build") {
-      steps {
-        echo "building"
+      node {
+        steps {
+          echo "building"
+          checkout scm
+          sh "pwd"
+          sh "ls"
+        }
       }
     }
     stage("test") {
