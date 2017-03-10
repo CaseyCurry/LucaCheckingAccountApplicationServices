@@ -5,7 +5,7 @@ node {
     stage("build") {
       node {
         pwd
-        git url: "https://github.com/caseycurry/LucaCheckingAccountApi"
+        checkout scm
       }
     }
     stage("test") {
