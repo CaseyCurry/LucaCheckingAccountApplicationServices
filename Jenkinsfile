@@ -5,9 +5,7 @@ node {
     stage("build") {
       node {
         steps {
-          checkout scm
-          sh "pwd"
-          sh "ls"
+          echo "building"
         }
       }
     }
