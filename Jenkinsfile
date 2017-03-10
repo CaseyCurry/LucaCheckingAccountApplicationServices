@@ -4,8 +4,9 @@ node {
   stages {
     stage("build") {
       node {
-        pwd
+        sh "pwd"
         checkout scm
+        sh "ls"
       }
     }
     stage("test") {
