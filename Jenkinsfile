@@ -3,10 +3,8 @@ node {
   agent any
   stages {
     stage("build") {
-      node {
-        steps {
-          echo "building"
-        }
+      steps {
+        echo "building"
       }
     }
     stage("test") {
