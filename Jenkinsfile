@@ -7,7 +7,7 @@ pipeline {
     stage("Build") {
       steps {
         checkout scm
-        echo "${GIT_REVISION}"
+        echo "${GIT_COMMIT}"
         sh "npm install"
         sh "npm install mochawesome mocha-multi"
       }
