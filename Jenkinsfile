@@ -6,6 +6,9 @@ pipeline {
   stages {
     stage("Build") {
       steps {
+        dir("./") {
+          deleteDir()
+        }
         checkout scm
         sh "npm set registry http://localhost:4873/"
         sh "npm install"
@@ -14,10 +17,11 @@ pipeline {
     }
     stage("Test") {
       steps {
-        sh "node_modules/.bin/mocha --opts mocha.opts --reporter mocha-multi --reporter-options mochawesome=-,xunit=specs.xml"
+        sh "node_modules/.bin/mocha --opts mocha.opts --reporter mocha-multi --reporter-options mochawesome=-,xunit=spec/specs.xml"
         sh "node_modules/.bin/nyc ./node_modules/.bin/mocha --opts mocha.opts"
-        archive "mochawesome-reports"
-        archive "spec/coverage"
+        archive "./mochawesome-reports/**/*"
+        archive "./spec/coverage/**/*"
+        test "./spec/specs.xml"
       }
     }
     stage("Package") {
