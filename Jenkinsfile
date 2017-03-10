@@ -7,7 +7,7 @@ pipeline {
     stage("Build") {
       steps {
         checkout scm
-        echo "${GIT_COMMIT}"
+        sh "npm set registry http://localhost:4873/"
         sh "npm install"
         sh "npm install mochawesome mocha-multi"
       }
@@ -21,7 +21,7 @@ pipeline {
     stage("Package") {
       steps {
         sh "node_modules/.bin/webpack"
-        sh "printf ${GIT_REVISION} > version.txt"
+        sh "git rev-parse --short HEAD > version.txt"
       }
     }
   }
