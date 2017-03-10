@@ -6,6 +6,7 @@ pipeline {
   stages {
     stage("Build") {
       steps {
+        sh "id"
         checkout scm
         sh "npm set registry http://localhost:4873/"
         sh "npm install"
