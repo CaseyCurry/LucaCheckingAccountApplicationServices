@@ -3,9 +3,9 @@ node {
   agent any
   stages {
     stage("build") {
-      steps {
+      node {
         pwd
-        git url: "https://github.com/caseycurry/LucaCheckingAccountApi", branch: "master"
+        git url: "https://github.com/caseycurry/LucaCheckingAccountApi"
       }
     }
     stage("test") {
