@@ -12,7 +12,6 @@ describe("domain date test suite", () => {
       const domainDate = new DomainDate(date);
       expect(domainDate.value)
         .to
-        .not
         .equal(date);
     });
 
