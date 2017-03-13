@@ -27,7 +27,7 @@ pipeline {
     stage("Package") {
       steps {
         sh "node_modules/.bin/webpack"
-        sh "git rev-parse --short HEAD > version.txt"
+        sh "git rev-parse --short HEAD > version"
       }
     }
   }
