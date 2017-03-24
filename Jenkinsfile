@@ -12,14 +12,12 @@ pipeline {
         checkout scm
         sh "npm set registry http://localhost:4873/"
         sh "npm install"
-        sh "npm install mochawesome mocha-multi"
       }
     }
     stage("Test") {
       steps {
-        sh "node_modules/.bin/mocha --opts mocha.opts --reporter mocha-multi --reporter-options mochawesome=-,xunit=spec/specs.xml"
+        sh "node_modules/.bin/mocha --opts mocha.opts --reporter xunit --reporter-options output=spec/specs.xml"
         sh "node_modules/.bin/nyc ./node_modules/.bin/mocha --opts mocha.opts"
-        archive "mochawesome-reports/**/*"
         archive "spec/coverage/**/*"
         junit "spec/specs.xml"
       }
