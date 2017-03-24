@@ -19,8 +19,8 @@ pipeline {
       steps {
         sh "node_modules/.bin/mocha --opts mocha.opts --reporter mocha-multi --reporter-options mochawesome=-,xunit=spec/specs.xml"
         sh "node_modules/.bin/nyc ./node_modules/.bin/mocha --opts mocha.opts"
-        archive "./mochawesome-reports/**/*"
-        archive "./spec/coverage/**/*"
+        archive "mochawesome-reports/**/*"
+        archive "spec/coverage/**/*"
         junit "spec/specs.xml"
       }
     }
