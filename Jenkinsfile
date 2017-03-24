@@ -21,7 +21,7 @@ pipeline {
         sh "node_modules/.bin/nyc ./node_modules/.bin/mocha --opts mocha.opts"
         archive "./mochawesome-reports/**/*"
         archive "./spec/coverage/**/*"
-        junit "./spec/specs.xml"
+        junit "spec/specs.xml"
       }
     }
     stage("Package") {
