@@ -1,1 +1,1 @@
-module.exports.database = process.env.ENV_VARIABLE;
+module.exports.database = process.env.TRANSACTIONS_STORE;
