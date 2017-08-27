@@ -13,8 +13,8 @@ const BankWebsite = require(
   "./api/commands/infrastructure/bank-website/bank-website");
 const bankWebsite = new BankWebsite(domainEvents);
 
-const UncategorizedTransactions =
-  require("./api/commands/infrastructure/database/uncategorized-transactions");
+const UncategorizedTransactions = require(
+  "./api/commands/infrastructure/database/uncategorized-transactions");
 const uncategorizedTransactions = new UncategorizedTransactions(axios);
 
 module.exports.syncDatabases = async() => {

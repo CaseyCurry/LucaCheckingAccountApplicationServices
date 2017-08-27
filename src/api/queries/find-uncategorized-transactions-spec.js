@@ -8,10 +8,10 @@ const findUncategorizedTransactions =
 
 describe("find uncategorized transactions test suite", () => {
   describe("integration test suite", () => {
-    before(() => {
+    before(async() => {
       // make sure the database and it's objects exists
       const dependencies = require("../../dependencies");
-      dependencies.syncDatabases();
+      await dependencies.syncDatabases();
     });
 
     it("should find transactions", async() => {
