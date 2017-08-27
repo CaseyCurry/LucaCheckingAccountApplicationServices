@@ -23,7 +23,6 @@ const findTransactions = async(database) => {
   const transactionIds = await findTransactionIds(database);
   const url = config.database + "/transactions/_design/doc/_view/" +
     "posted-by-transaction-id?include_docs=true";
-  console.log(url);
   const transactions = await database
     .post(url, {
       keys: transactionIds
