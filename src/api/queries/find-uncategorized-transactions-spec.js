@@ -10,7 +10,7 @@ describe("find uncategorized transactions test suite", () => {
   describe("integration test suite", () => {
     before(() => {
       // make sure the database and it's objects exists
-      const dependencies = require("../dependencies");
+      const dependencies = require("../../dependencies");
       dependencies.syncDatabases();
     });
 
