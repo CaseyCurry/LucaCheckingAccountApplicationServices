@@ -1,0 +1,74 @@
+{
+  "Job": {
+    "ID": "checking-account-api",
+    "Name": "checking-account-api",
+    "Type": "service",
+    "Datacenters": [
+      "dev-lab"
+    ],
+    "Constraints": [{
+      "LTarget": "${meta.rkt}",
+      "RTarget": "1",
+      "Operand": "="
+    }, {
+      "LTarget": "${meta.couchdb}",
+      "RTarget": "1",
+      "Operand": "="
+    }],
+    "TaskGroups": [{
+      "Name": "service",
+      "Count": 1,
+      "Tasks": [{
+        "Name": "api",
+        "Driver": "rkt",
+        "Config": {
+          "image": "http://192.168.56.110/checking-account-api.{{version}}.aci",
+          "insecure_options": [
+            "image"
+          ],
+          "port_map": [{
+            "app": "http"
+          }]
+        },
+        "Services": [{
+          "Id": "",
+          "Name": "checking-account-api",
+          "Tags": [
+            "luca"
+          ],
+          "PortLabel": "app",
+          "Checks": [{
+            "Name": "Checking Account Api Healthy",
+            "Type": "http",
+            "Path": "/api/transactions/states/uncategorized",
+            "Interval": 10000000000,
+            "Timeout": 2000000000
+          }]
+        }],
+        "Resources": {
+          "CPU": 150,
+          "MemoryMB": 64,
+          "Networks": [{
+            "MBits": 10,
+            "DynamicPorts": [{
+              "Label": "app"
+            }]
+          }]
+        },
+        "LogConfig": {
+          "MaxFiles": 5,
+          "MaxFileSizeMB": 10
+        }
+      }],
+      "RestartPolicy": {
+        "Interval": 300000000000,
+        "Attempts": 10,
+        "Delay": 25000000000,
+        "Mode": "delay"
+      },
+      "EphemeralDisk": {
+        "SizeMB": 100
+      }
+    }]
+  }
+}

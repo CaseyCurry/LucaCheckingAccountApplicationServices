@@ -1,0 +1,399 @@
+{
+  "group": "Commit",
+  "name": "CheckingAccountApi",
+  "label_template": "${COUNT}",
+  "enable_pipeline_locking": false,
+  "tracking_tool": null,
+  "timer": null,
+  "environment_variables": [],
+  "materials": [{
+    "url": "https://github.com/caseycurry/LucaCheckingAccountApi",
+    "branch": "master",
+    "filter": null,
+    "destination": null,
+    "auto_update": true,
+    "name": null,
+    "type": "git"
+  }],
+  "stages": [{
+    "name": "Build",
+    "fetch_materials": true,
+    "never_cleanup_artifacts": false,
+    "clean_working_directory": true,
+    "environment_variables": [{
+      "name": "PATH",
+      "value": "/usr/local/bin:/usr/bin:/bin"
+    }],
+    "jobs": [{
+      "name": "Build",
+      "environment_variables": [],
+      "tabs": [],
+      "resources": [],
+      "artifacts": [{
+        "source": "node_modules/**/*",
+        "destination": "node_modules",
+        "type": "build"
+      }],
+      "properties": [],
+      "run_instance_count": null,
+      "timeout": 0,
+      "tasks": [{
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "npm",
+        "arguments": [
+          "install"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "npm",
+        "arguments": [
+          "install",
+          "mochawesome",
+          "mocha-multi"
+        ],
+        "working_directory": null
+      }]
+    }]
+  }, {
+    "name": "Containerize",
+    "fetch_materials": true,
+    "never_cleanup_artifacts": false,
+    "clean_working_directory": true,
+    "environment_variables": [{
+      "name": "PATH",
+      "value": "/usr/local/bin:/usr/bin:/bin"
+    }],
+    "jobs": [{
+      "name": "UnitTest",
+      "environment_variables": [{
+        "name": "TRANSACTIONS_STORE",
+        "value": "http://192.168.56.111:5984"
+      }],
+      "tabs": [{
+        "name": "Report",
+        "path": "mochawesome/mochawesome.html"
+      }, {
+        "name": "Coverage",
+        "path": "coverage/lcov-report/index.html"
+      }],
+      "resources": [],
+      "artifacts": [{
+        "source": "mochawesome-report/**/*",
+        "destination": "mochawesome",
+        "type": "build"
+      }, {
+        "source": "spec/coverage",
+        "destination": null,
+        "type": "build"
+      }, {
+        "source": "specs.xml",
+        "destination": null,
+        "type": "test"
+      }],
+      "properties": [],
+      "run_instance_count": null,
+      "timeout": 0,
+      "tasks": [{
+        "type": "fetch",
+        "run_if": "passed",
+        "pipeline": "CheckingAccountApi",
+        "stage": "Build",
+        "job": "Build",
+        "is_source_a_file": false,
+        "source": "./node_modules",
+        "destination": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "npm",
+        "arguments": [
+          "rebuild"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "bash",
+        "arguments": [
+          "-c",
+          "./node_modules/.bin/mocha --opts mocha.opts --reporter mocha-multi --reporter-options mochawesome=-,xunit=specs.xml"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "bash",
+        "arguments": [
+          "-c",
+          "./node_modules/.bin/nyc ./node_modules/.bin/mocha --opts mocha.opts"
+        ],
+        "working_directory": null
+      }]
+    }, {
+      "name": "Containerize",
+      "environment_variables": [],
+      "tabs": [],
+      "resources": [],
+      "artifacts": [{
+        "source": "container",
+        "destination": null,
+        "type": "build"
+      }],
+      "properties": [],
+      "run_instance_count": null,
+      "timeout": 0,
+      "tasks": [{
+        "type": "fetch",
+        "run_if": "passed",
+        "pipeline": "CheckingAccountApi",
+        "stage": "Build",
+        "job": "Build",
+        "is_source_a_file": false,
+        "source": "./node_modules",
+        "destination": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "npm",
+        "arguments": [
+          "rebuild"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "./node_modules/.bin/webpack",
+        "arguments": [],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "mkdir",
+        "arguments": [
+          "dependencies"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "curl",
+        "arguments": [
+          "-O",
+          "https://raw.githubusercontent.com/CaseyCurry/LucaOpsEnvironment/master/dependencies/nodejs/latest/nodejs-6.9.5"
+        ],
+        "working_directory": "./dependencies"
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "chmod",
+        "arguments": [
+          "u+x",
+          "./nodejs-6.9.5"
+        ],
+        "working_directory": "dependencies"
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "acbuild",
+        "arguments": [
+          "begin"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "acbuild",
+        "arguments": [
+          "set-name",
+          "luca.com/checking-account-api"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "/bin/bash",
+        "arguments": [
+          "-c",
+          "acbuild label add version $GO_REVISION"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "acbuild",
+        "arguments": [
+          "copy",
+          "./dist",
+          "/dist"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "acbuild",
+        "arguments": [
+          "copy",
+          "./dependencies/nodejs-6.9.5",
+          "/nodejs-6.9.5"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "acbuild",
+        "arguments": [
+          "set-exec",
+          "/nodejs-6.9.5",
+          "/dist/host.js"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "acbuild",
+        "arguments": [
+          "environment",
+          "add",
+          "TRANSACTIONS_STORE",
+          "http://172.16.28.1:5984"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "acbuild",
+        "arguments": [
+          "port",
+          "add",
+          "http",
+          "tcp",
+          "8080"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "bash",
+        "arguments": [
+          "-c",
+          "mkdir ./container && acbuild write ./container/checking-account-api.$GO_REVISION.aci"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "acbuild",
+        "arguments": [
+          "end"
+        ],
+        "working_directory": null
+      }]
+    }, {
+      "name": "SaveVersion",
+      "environment_variables": [],
+      "tabs": [],
+      "resources": [],
+      "artifacts": [{
+        "source": "version.txt",
+        "destination": null,
+        "type": "build"
+      }],
+      "properties": [],
+      "run_instance_count": null,
+      "timeout": 0,
+      "tasks": [{
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "bash",
+        "arguments": [
+          "-c",
+          "printf $GO_REVISION > ./version.txt"
+        ],
+        "working_directory": null
+      }]
+    }]
+  }, {
+    "name": "DeployToDev",
+    "fetch_materials": true,
+    "never_cleanup_artifacts": false,
+    "clean_working_directory": true,
+    "environment_variables": [{
+      "name": "PATH",
+      "value": "/usr/local/bin:/usr/bin:/bin"
+    }],
+    "jobs": [{
+      "name": "SubmitNomadJob",
+      "environment_variables": [],
+      "tabs": [],
+      "resources": [],
+      "artifacts": [],
+      "properties": [],
+      "run_instance_count": null,
+      "timeout": 0,
+      "tasks": [{
+        "type": "fetch",
+        "run_if": "passed",
+        "pipeline": "CheckingAccountApi",
+        "stage": "Containerize",
+        "job": "Containerize",
+        "is_source_a_file": false,
+        "source": "./container",
+        "destination": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "bash",
+        "arguments": [
+          "-c",
+          "scp -o StrictHostKeyChecking=no -i /var/go/.ssh/id_rsa ./container/users-api.$GO_REVISION.aci cj@192.168.56.110:/www/containers"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "bash",
+        "arguments": [
+          "-c",
+          "sed -i \"s/{{version}}/$GO_REVISION/\" ./.nomad.json"
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "bash",
+        "arguments": [
+          "-c",
+          "if [ $(curl -XPOST http://192.168.56.110:4646/v1/jobs -H 'Content-Type: application/json' --data-binary @./.nomad.json --write-out '\nSTATUS CODE: %{http_code}' | grep 'STATUS CODE: ' | sed 's/STATUS CODE: //') -ne 200 ]; then exit 1; fi"
+        ],
+        "working_directory": null
+      }]
+    }]
+  }]
+}
