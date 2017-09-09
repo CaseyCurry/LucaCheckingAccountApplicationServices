@@ -4,15 +4,15 @@
   "description": "",
   "main": "src/host.js",
   "scripts": {
-    "coverage": "nyc npm run test",
-    "test": "mocha --opts mocha.opts",
+    "coverage": "TRANSACTIONS_STORE=http://192.168.56.111:5984 nyc npm run test",
+    "test": "TRANSACTIONS_STORE=http://192.168.56.111:5984 mocha --opts mocha.opts",
     "lint": "eslint . --ext .js --ext .jsx --ignore-path .gitignore",
     "build:dev": "webpack",
     "build:release": "webpack -p",
     "start": "npm run build:dev && node ./dist/host.js",
     "dev:start": "forever start --watch --watch-dir src/api -c \"node --require babel-core/register --require babel-polyfill\" ./src/host.js",
     "dev:stop": "forever stop src/host.js",
-    "dev": "npm run dev:start & webpack-dev-server --inline --hot --open --config ./spec/webpack.config.js"
+    "dev": "webpack-dev-server --inline --hot --open --config ./spec/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -40,11 +40,12 @@
   "dependencies": {
     "axios": "^0.15.3",
     "babel-polyfill": "^6.5.0",
+    "body-parser": "^1.16.0",
     "common-errors": "^1.0.0",
+    "cors": "^2.8.1",
     "express": "^4.14.0",
     "express-async-wrap": "^1.0.0",
-    "luca-api-initializer": "^1.0.0",
-    "luca-couchdb-synchronizer": "^1.0.1",
-    "luca-service-registry-library": "^1.2.4"
+    "helmet": "^3.4.0",
+    "luca-couchdb-synchronizer": "^1.0.1"
   }
 }
