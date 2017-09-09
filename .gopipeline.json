@@ -370,7 +370,7 @@
         "command": "bash",
         "arguments": [
           "-c",
-          "scp -o StrictHostKeyChecking=no -i /var/go/.ssh/id_rsa ./container/users-api.$GO_REVISION.aci cj@192.168.56.110:/www/containers"
+          "scp -o StrictHostKeyChecking=no -i /var/go/.ssh/id_rsa ./container/checking-account-api.$GO_REVISION.aci cj@192.168.56.110:/www/containers"
         ],
         "working_directory": null
       }, {
