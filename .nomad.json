@@ -22,7 +22,7 @@
         "Name": "api",
         "Driver": "rkt",
         "Config": {
-          "image": "http://192.168.56.110/checking-account-api.{{version}}.aci",
+          "image": "http://192.168.56.110/checkingaccount-api.{{version}}.aci",
           "insecure_options": [
             "image"
           ],
