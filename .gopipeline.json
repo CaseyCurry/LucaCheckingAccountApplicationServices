@@ -43,8 +43,7 @@
         "on_cancel": null,
         "command": "npm",
         "arguments": [
-          "install",
-          "--verbose"
+          "install"
         ],
         "working_directory": null
       }, {
