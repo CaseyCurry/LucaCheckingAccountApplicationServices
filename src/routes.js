@@ -11,25 +11,25 @@ const categorizeTransactions =
 const wrap = require("express-async-wrap");
 
 module.exports.register = (dependencies, app) => {
-  app.get("/api/transactions/states/recent",
+  app.get("/api/checkingaccount/states/recent",
     wrap(async(request, response) => {
       await findRecentTransactions(
         request, response, dependencies.findRecentTransactions());
     }));
 
-  app.post("/api/transactions/states/imported",
+  app.post("/api/checkingaccount/states/imported",
     wrap(async(request, response) => {
       await importTransactions(
         request, response, dependencies.importTransactions());
     }));
 
-  app.get("/api/transactions/states/uncategorized",
+  app.get("/api/checkingaccount/states/uncategorized",
     wrap(async(request, response) => {
       await findUncategorizedTransactions(
         request, response, dependencies.findUncategorizedTransactions());
     }));
 
-  app.post("/api/transactions/states/categorized",
+  app.post("/api/checkingaccount/states/categorized",
     wrap(async(request, response) => {
       await categorizeTransactions(
         request, response, dependencies.categorizeTransactions());

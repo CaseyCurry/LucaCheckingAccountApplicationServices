@@ -31,8 +31,8 @@
           }]
         },
         "Services": [{
-          "Id": "/api/checking-account",
-          "Name": "checking-account-api",
+          "Id": "",
+          "Name": "checkingaccount-api",
           "Tags": [
             "luca"
           ],
@@ -40,7 +40,7 @@
           "Checks": [{
             "Name": "Checking Account Api Healthy",
             "Type": "http",
-            "Path": "/api/transactions/states/uncategorized",
+            "Path": "/api/checkingaccount/states/uncategorized",
             "Interval": 10000000000,
             "Timeout": 2000000000
           }]
