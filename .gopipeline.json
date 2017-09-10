@@ -372,6 +372,16 @@
         "command": "bash",
         "arguments": [
           "-c",
+          "ssh -o StrictHostKeyChecking=no -i /var/go/.ssh/id_rsa cj@192.168.56.110 \"cd /www/containers && ls -t | grep -e 'checkingaccount-api' | tail -n +4 | xargs -r rm\""
+        ],
+        "working_directory": null
+      }, {
+        "type": "exec",
+        "run_if": "passed",
+        "on_cancel": null,
+        "command": "bash",
+        "arguments": [
+          "-c",
           "scp -o StrictHostKeyChecking=no -i /var/go/.ssh/id_rsa ./container/checkingaccount-api.$GO_REVISION.aci cj@192.168.56.110:/www/containers"
         ],
         "working_directory": null
