@@ -8,8 +8,9 @@ const CategorizationRequestedHandler = (
       event.message.transaction.tenantId,
       event.message.transaction.id
     );
-    transaction.categorize(event.message.transaction.categorization);
+    await transaction.categorize(event.message.transaction.categorization);
     await transactionRepository.update(transaction);
+    domainEvents.raise(transaction.domainEvents.raisedEvents);
   };
 
   return {

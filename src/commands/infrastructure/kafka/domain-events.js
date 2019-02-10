@@ -124,27 +124,34 @@ const DomainEvents = kafka => {
         `the kafka producer is ready to send messages to ${brokerLocation}`
       );
       resolve({
-        raise: event => {
-          if (!event) {
+        raise: events => {
+          if (!events) {
             throw new Error("an event must be passed");
           }
-          const topic = getTopic(event.name);
-          console.debug(
-            `raising the ${event.name} event with id ${
-              event.id
-            } on topic ${topic}`
-          );
-          // TODO: partitition by aggregate id
-          const partition = null;
-          try {
-            producer.produce(
-              topic,
-              partition,
-              Buffer.from(JSON.stringify(event))
-            );
-          } catch (error) {
-            console.error(error);
+          if (!Array.isArray(events)) {
+            events = [events];
           }
+          events
+            .sort((x, y) => x.occurredOn - y.occurredOn)
+            .forEach(event => {
+              const topic = getTopic(event.name);
+              console.debug(
+                `raising the ${event.name} event with id ${
+                  event.id
+                } on topic ${topic}`
+              );
+              // TODO: partitition by aggregate id
+              const partition = null;
+              try {
+                producer.produce(
+                  topic,
+                  partition,
+                  Buffer.from(JSON.stringify(event))
+                );
+              } catch (error) {
+                console.error(error);
+              }
+            });
         },
         listenAndHandleOnce: (eventName, handler) => {
           console.debug(`listening to the ${eventName} event`);

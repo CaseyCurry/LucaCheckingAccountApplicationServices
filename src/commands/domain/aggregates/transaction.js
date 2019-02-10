@@ -1,5 +1,6 @@
 import { BaseAggregate } from "./base-aggregate";
 import { Categorization } from "../value-objects/categorization";
+import { TransactionCategorizedEvent } from "../events/transaction-categorized-event";
 
 // TODO: unit test
 const Transaction = class extends BaseAggregate {
@@ -31,8 +32,17 @@ const Transaction = class extends BaseAggregate {
     this.ignoreInReports = ignoreInReports;
   }
 
-  categorize(categorization) {
+  async categorize(categorization) {
     this.categorization = categorization;
+    await this.domainEvents.raise(
+      new TransactionCategorizedEvent(
+        this.id,
+        this.tenantId,
+        this.categorization,
+        this.amount,
+        this.isDeposit
+      )
+    );
   }
 
   splitAmount(amount) {
