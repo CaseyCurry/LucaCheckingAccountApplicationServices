@@ -1,12 +1,7 @@
 {
-  "presets": ["es2015"],
+  "presets": ["@babel/preset-env"],
   "plugins": [
-    ["transform-runtime", {
-      "polyfill": true,
-      "regenerator": true,
-      "helpers": false
-    }],
-    "transform-class-properties",
-    "transform-async-to-generator"
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-transform-async-to-generator"
   ]
 }

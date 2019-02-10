@@ -10,10 +10,7 @@
   "extension": [
     ".js"
   ],
-  "require": [
-    "babel-core/register",
-    "babel-polyfill"
-  ],
+  "require": [],
   "cache": true,
   "check-coverage": false,
   "report-dir": "./spec/coverage",

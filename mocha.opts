@@ -1,2 +1,4 @@
-src/**/*-spec.js
---require babel-core/register
+./src/**/*-spec.js
+
+--require @babel/register
+--require ./spec/bootstrap.js
