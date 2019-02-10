@@ -28,7 +28,6 @@ describe("group transactions service suite", () => {
       }
     ];
     const results = CategorizationRecommender.recommend(transactions);
-    console.log(results);
     expect(results[0].phrase).to.equal(phrase);
     expect(results[0].transactions.length).to.equal(transactions.length);
   });

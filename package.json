@@ -1,5 +1,5 @@
 {
-  "name": "luca-services-checking-account-api-v2",
+  "name": "luca-services-checking-account-api",
   "version": "1.0.0",
   "description": "",
   "main": "./src/index.js",
