@@ -13,7 +13,11 @@ describe("categorization requested event suite", () => {
   let event;
 
   beforeEach(() => {
-    event = new Event(transaction);
+    event = new Event(
+      transaction.id,
+      transaction.tenantId,
+      transaction.categorization
+    );
   });
 
   it("should include an id", () => {
@@ -25,7 +29,7 @@ describe("categorization requested event suite", () => {
   });
 
   it("should include the name", () => {
-    expect(event.name).to.equal("checking-account.categorization-requested");
+    expect(event.name).to.equal("categorization-requested");
   });
 
   xit("should include the correlation id", () => {

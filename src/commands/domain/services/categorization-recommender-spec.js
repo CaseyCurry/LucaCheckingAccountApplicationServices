@@ -1,18 +1,20 @@
 import { expect } from "chai";
-import { CategorizationRecommender } from "./categorization-recommender";
+import { categorizationRecommender } from "./categorization-recommender";
 
 describe("group transactions service suite", () => {
   it("should group a word", () => {
     const word = "NETFLIX";
     const transactions = [
       {
+        id: "123",
         description: word
       },
       {
+        id: "456",
         description: word
       }
     ];
-    const results = CategorizationRecommender.recommend(transactions);
+    const results = categorizationRecommender.recommend(transactions);
     expect(results[0].phrase).to.equal(word);
     expect(results[0].transactions.length).to.equal(transactions.length);
   });
@@ -21,13 +23,15 @@ describe("group transactions service suite", () => {
     const phrase = "NETFLIX MONTHLY";
     const transactions = [
       {
+        id: "123",
         description: phrase
       },
       {
+        id: "456",
         description: phrase
       }
     ];
-    const results = CategorizationRecommender.recommend(transactions);
+    const results = categorizationRecommender.recommend(transactions);
     expect(results[0].phrase).to.equal(phrase);
     expect(results[0].transactions.length).to.equal(transactions.length);
   });
@@ -40,13 +44,15 @@ describe("group transactions service suite", () => {
     const secondPhrase = `${common} ${secondExtension}`;
     const transactions = [
       {
+        id: "123",
         description: firstPhrase
       },
       {
+        id: "456",
         description: secondPhrase
       }
     ];
-    const results = CategorizationRecommender.recommend(transactions);
+    const results = categorizationRecommender.recommend(transactions);
     expect(3).to.equal(results.length);
     results.forEach(x => {
       if (x.phrase === common) {
@@ -61,38 +67,20 @@ describe("group transactions service suite", () => {
     });
   });
 
-  it("sort by the highest transaction count", () => {
-    const firstPhrase = "NETFLIX";
-    const secondPhrase = "ITUNES";
-    const transactions = [
-      {
-        description: firstPhrase
-      },
-      {
-        description: secondPhrase
-      },
-      {
-        description: secondPhrase
-      }
-    ];
-    const results = CategorizationRecommender.recommend(transactions);
-    expect(2).to.equal(results.length);
-    expect(secondPhrase).to.equal(results[0].phrase);
-    expect(firstPhrase).to.equal(results[1].phrase);
-  });
-
   describe("exlusions test suite", () => {
     it("should exclude a phrase", () => {
       const exclusion = "DBT CRD";
       const transactions = [
         {
+          id: "123",
           description: `${exclusion} ITUNES`
         },
         {
+          id: "456",
           description: `${exclusion} NETFLIX`
         }
       ];
-      const results = CategorizationRecommender.recommend(transactions);
+      const results = categorizationRecommender.recommend(transactions);
       results.forEach(x => {
         expect(x.phrase).not.to.equal(exclusion);
       });
@@ -102,13 +90,15 @@ describe("group transactions service suite", () => {
       const exclusion = "Card";
       const transactions = [
         {
+          id: "123",
           description: `${exclusion} ITUNES`
         },
         {
+          id: "456",
           description: `${exclusion} NETFLIX`
         }
       ];
-      const results = CategorizationRecommender.recommend(transactions);
+      const results = categorizationRecommender.recommend(transactions);
       results.forEach(x => {
         expect(x.phrase).not.to.equal(exclusion);
       });
@@ -118,13 +108,15 @@ describe("group transactions service suite", () => {
       const exclusion = "1234";
       const transactions = [
         {
+          id: "123",
           description: `${exclusion} ITUNES`
         },
         {
+          id: "456",
           description: `${exclusion} NETFLIX`
         }
       ];
-      const results = CategorizationRecommender.recommend(transactions);
+      const results = categorizationRecommender.recommend(transactions);
       results.forEach(x => {
         expect(x.phrase).not.to.equal(exclusion);
       });
@@ -134,13 +126,15 @@ describe("group transactions service suite", () => {
       const exclusion = "01/01/2016";
       const transactions = [
         {
+          id: "123",
           description: `${exclusion} ITUNES`
         },
         {
+          id: "456",
           description: `${exclusion} NETFLIX`
         }
       ];
-      const results = CategorizationRecommender.recommend(transactions);
+      const results = categorizationRecommender.recommend(transactions);
       results.forEach(x => {
         expect(x.phrase).not.to.equal(exclusion);
       });
@@ -150,29 +144,33 @@ describe("group transactions service suite", () => {
       const exclusion = "12:30";
       const transactions = [
         {
+          id: "123",
           description: `${exclusion} ITUNES`
         },
         {
+          id: "456",
           description: `${exclusion} NETFLIX`
         }
       ];
-      const results = CategorizationRecommender.recommend(transactions);
+      const results = categorizationRecommender.recommend(transactions);
       results.forEach(x => {
         expect(x.phrase).not.to.equal(exclusion);
       });
     });
 
-    it("should exclude a word if its length is less than 4", () => {
-      const exclusion = "CAL";
+    it("should exclude a word if its length is less than 3", () => {
+      const exclusion = "CJ";
       const transactions = [
         {
+          id: "123",
           description: `${exclusion} ITUNES`
         },
         {
+          id: "456",
           description: `${exclusion} NETFLIX`
         }
       ];
-      const results = CategorizationRecommender.recommend(transactions);
+      const results = categorizationRecommender.recommend(transactions);
       results.forEach(x => {
         expect(x.phrase).not.to.equal(exclusion);
       });
@@ -182,13 +180,15 @@ describe("group transactions service suite", () => {
       const exclusion = "Card";
       const transactions = [
         {
+          id: "123",
           description: `${exclusion}`
         },
         {
+          id: "456",
           description: `${exclusion}`
         }
       ];
-      const results = CategorizationRecommender.recommend(transactions);
+      const results = categorizationRecommender.recommend(transactions);
       expect(results[0].phrase).to.equal("Ungrouped");
       expect(results[0].transactions.length).to.equal(transactions.length);
     });

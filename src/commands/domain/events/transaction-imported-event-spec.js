@@ -9,7 +9,7 @@ describe("transaction imported event suite", () => {
   let event;
 
   beforeEach(() => {
-    event = new Event(transaction.id, transaction.categorization);
+    event = new Event(transaction);
   });
 
   it("should include an id", () => {
@@ -21,7 +21,7 @@ describe("transaction imported event suite", () => {
   });
 
   it("should include the name", () => {
-    expect(event.name).to.equal("checking-account.transaction-imported");
+    expect(event.name).to.equal("transaction-imported");
   });
 
   xit("should include the correlation id", () => {

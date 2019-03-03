@@ -1,3 +1,5 @@
+import hash from "object-hash";
+
 const DomainEvents = class {
   constructor() {
     this.raisedEvents = [];
@@ -22,8 +24,7 @@ const DomainEvents = class {
 };
 
 const BaseAggregate = class {
-  constructor(_rev) {
-    this._rev = _rev;
+  constructor() {
     /* Use defineProperty so that domainEvents can be set to unenumerable so
        it will not be serialized. */
     Object.defineProperty(this, "domainEvents", {
@@ -31,6 +32,10 @@ const BaseAggregate = class {
       writable: false,
       enumerable: false
     });
+  }
+
+  get hash() {
+    return hash(this);
   }
 };
 

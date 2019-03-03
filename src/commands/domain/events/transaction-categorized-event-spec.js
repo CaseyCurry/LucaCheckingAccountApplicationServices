@@ -10,12 +10,20 @@ describe("transaction categorized event suite", () => {
       subcategory: "rent"
     },
     amount: 100,
-    isDeposit: true
+    isDeposit: true,
+    date: new Date().toISOString()
   };
   let event;
 
   beforeEach(() => {
-    event = new Event(transaction);
+    event = new Event(
+      transaction.id,
+      transaction.tenantId,
+      transaction.categorization,
+      transaction.amount,
+      transaction.isDeposit,
+      transaction.date
+    );
   });
 
   it("should include an id", () => {
@@ -27,7 +35,7 @@ describe("transaction categorized event suite", () => {
   });
 
   it("should include the name", () => {
-    expect(event.name).to.equal("checking-account.categorization-requested");
+    expect(event.name).to.equal("transaction-categorized");
   });
 
   xit("should include the correlation id", () => {
@@ -40,7 +48,8 @@ describe("transaction categorized event suite", () => {
       tenantId: transaction.tenantId,
       categorization: transaction.categorization,
       amount: transaction.amount,
-      isDeposit: transaction.isDeposit
+      isDeposit: transaction.isDeposit,
+      date: transaction.date
     });
   });
 

@@ -3,13 +3,13 @@ import { TransactionSplitEvent as Event } from "./transaction-split-event";
 
 describe("transaction split event suite", () => {
   const originalTransactionId = 123;
-  const newTransaction = {
+  const transaction = {
     id: 456
   };
   let event;
 
   beforeEach(() => {
-    event = new Event(originalTransactionId.id, newTransaction);
+    event = new Event(originalTransactionId, transaction);
   });
 
   it("should include an id", () => {
@@ -21,7 +21,7 @@ describe("transaction split event suite", () => {
   });
 
   it("should include the name", () => {
-    expect(event.name).to.equal("checking-account.transaction-imported");
+    expect(event.name).to.equal("transaction-split");
   });
 
   xit("should include the correlation id", () => {
@@ -35,7 +35,7 @@ describe("transaction split event suite", () => {
   });
 
   it("should include the new transaction", () => {
-    expect(event.message.newTransaction).to.deep.equal(newTransaction);
+    expect(event.message.transaction).to.deep.equal(transaction);
   });
 
   it("should be immutable", () => {

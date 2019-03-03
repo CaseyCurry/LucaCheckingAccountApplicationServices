@@ -1,0 +1,1166 @@
+[
+  {
+    "_id": "01bbde4c-cc8a-4776-8503-e9889ae439f0",
+    "_rev": "3-26451b6f86bb689fe5d7da3effcf7b68",
+    "id": "01bbde4c-cc8a-4776-8503-e9889ae439f0",
+    "account": "XXXXXX9409",
+    "date": "2018-01-29T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 0949 01/29/18 425965 NTTA AUTOCHARGE 972-818-6882 TX Card# 7064",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "032801e4-ecab-4a00-85d4-30bf707ccd3e",
+    "_rev": "3-ac6c6bccaeac6be46bcbfcb474717b07",
+    "id": "032801e4-ecab-4a00-85d4-30bf707ccd3e",
+    "account": "XXXXXX9409",
+    "date": "2017-01-27T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1110 01/27/17 099124 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "0332cef9-6a02-45fd-bf7f-9c0a694a3b1e",
+    "_rev": "3-e02fcdc666ff555ff5cf677eda3de344",
+    "id": "0332cef9-6a02-45fd-bf7f-9c0a694a3b1e",
+    "account": "XXXXXX9409",
+    "date": "2016-10-19T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1653 10/18/16 037848 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "0ae07c3f-57ed-48fc-8a98-df9db94709a1",
+    "_rev": "3-77dd7fd6d4fe1e43550aa38134aa9d9b",
+    "id": "0ae07c3f-57ed-48fc-8a98-df9db94709a1",
+    "account": "XXXXXX9409",
+    "date": "2015-12-21T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 0948 12/19/15 044310 NTTA CUST SVC ONLIN 972-818-6882 TX Card# 8719",
+    "amount": 57,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "0db7c0e3-9cdd-49b3-9eb1-9a5cf23d0d06",
+    "_rev": "3-1950d051b5838cfb6d180e86bd27d8d1",
+    "id": "0db7c0e3-9cdd-49b3-9eb1-9a5cf23d0d06",
+    "account": "XXXXXX9409",
+    "date": "2016-09-30T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1120 09/30/16 082312 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "0edeab72-681d-45f8-b36f-48d61c512919",
+    "_rev": "3-c07e13a660b0805b7dfcf77d14f5d231",
+    "id": "0edeab72-681d-45f8-b36f-48d61c512919",
+    "account": "XXXXXX9409",
+    "date": "2017-10-16T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 2301 10/13/17 290418 NTTA AUTOCHARGE 972-818-6882 TX Card# 7064",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "10d2cba0-5ab3-4e9b-b156-b572e04d3374",
+    "_rev": "3-87546de7c3bbc16ee6bfc9db28060c36",
+    "id": "10d2cba0-5ab3-4e9b-b156-b572e04d3374",
+    "account": "XXXXXX9409",
+    "date": "2015-11-17T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1704 11/16/15 051616 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 10,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "18d3663f-3d99-457b-8641-d9da7005d9a2",
+    "_rev": "3-2480d8a56de3c319402ea8f78d286ff5",
+    "id": "18d3663f-3d99-457b-8641-d9da7005d9a2",
+    "account": "XXXXXX9409",
+    "date": "2016-03-21T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 2223 03/20/16 069962 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "1b0a4be7-3fa9-44dc-a6be-191d95d17d56",
+    "_rev": "3-79e5f52454e9dd25d17b9664784db55f",
+    "id": "1b0a4be7-3fa9-44dc-a6be-191d95d17d56",
+    "account": "XXXXXX9409",
+    "date": "2013-06-10T05:00:00.000Z",
+    "description": "CALVIN KLEIN POS DEB 10:16 06/08/13 740 ALLEN TX Card # 9045",
+    "amount": 34.62,
+    "isDeposit": false,
+    "categorization": {
+      "category": "clothing",
+      "subcategory": "miscellaneous"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "1b3a3be4-4b23-44ca-8a8f-4d5065c07316",
+    "_rev": "3-8161d58e37a13b8188a2c5f099730603",
+    "id": "1b3a3be4-4b23-44ca-8a8f-4d5065c07316",
+    "account": "XXXXXX9409",
+    "date": "2016-08-15T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1125 08/15/16 090579 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "1b57cc4c-fc17-40b6-be70-c75cd5100ae7",
+    "_rev": "3-d8f2c752a325912ffe16349b019e813c",
+    "id": "1b57cc4c-fc17-40b6-be70-c75cd5100ae7",
+    "account": "XXXXXX9409",
+    "date": "2017-05-30T05:00:00.000Z",
+    "description": "POS Debit - DDA AMAZON.COM POS DEB 1840 05/28/17 QJ2A85UE SEATTLE WA Card# 8863",
+    "amount": 38.29,
+    "isDeposit": false,
+    "categorization": { "category": "recreation", "subcategory": "books" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "1b64d319-b64f-435a-ad44-af7fa4fb32c2",
+    "_rev": "3-74d65fc21f63235380d2fe97a2c00534",
+    "id": "1b64d319-b64f-435a-ad44-af7fa4fb32c2",
+    "account": "XXXXXX9409",
+    "date": "2016-06-15T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1117 06/15/16 030659 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "221195fc-1100-43dd-a170-f35a7abb3b2b",
+    "_rev": "3-0316794bf69dd649ee6c460097f803a2",
+    "id": "221195fc-1100-43dd-a170-f35a7abb3b2b",
+    "account": "XXXXXX9409",
+    "date": "2017-03-20T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 0325 03/19/17 052242 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "22cb72bf-a94c-4cfd-90c6-2c58b6fad4ca",
+    "_rev": "3-f353a46f6d031e8c398f4528ef24c10a",
+    "id": "22cb72bf-a94c-4cfd-90c6-2c58b6fad4ca",
+    "account": "XXXXXX9409",
+    "date": "2015-12-28T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 0926 12/28/15 033713 NTTA AUTOCHARGE 972-818-6882 TX Card# 8719",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "22d1f569-6de2-4f6d-a916-5a543af3e0cc",
+    "_rev": "3-e5aef5410b7128e57afdfed4e54dfe57",
+    "id": "22d1f569-6de2-4f6d-a916-5a543af3e0cc",
+    "account": "XXXXXX9409",
+    "date": "2017-06-14T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1144 06/14/17 021773 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "2e50666e-f7a6-4127-8b69-b94e434e4488",
+    "_rev": "3-f4af4e18574aa262ed27b0067d785f04",
+    "id": "2e50666e-f7a6-4127-8b69-b94e434e4488",
+    "account": "XXXXXX9409",
+    "date": "2016-10-17T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1653 10/14/16 009115 NTTA CUST SVC ONLIN 972-818-6882 TX Card# 8863",
+    "amount": 32.9,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "31c7adbc-95ee-4728-8f0a-ac4119a64170",
+    "_rev": "3-a42bfbf9c5e9501747df0cc69d2442e5",
+    "id": "31c7adbc-95ee-4728-8f0a-ac4119a64170",
+    "account": "XXXXXX9409",
+    "date": "2015-12-21T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 2225 12/20/15 027752 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "34df95ff-89e3-420f-8940-cd7263477427",
+    "_rev": "3-4d5566d6d8472ff6d365db765ef06dc0",
+    "id": "34df95ff-89e3-420f-8940-cd7263477427",
+    "account": "XXXXXX9409",
+    "date": "2016-08-19T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1645 08/18/16 043944 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "35391c68-8baf-43b9-aea9-2b8c68684815",
+    "_rev": "3-4a0496b06d1adf34188a9750aa7b5a0b",
+    "id": "35391c68-8baf-43b9-aea9-2b8c68684815",
+    "account": "XXXXXX9409",
+    "date": "2016-01-25T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 0924 01/24/16 086188 NTTA AUTOCHARGE 972-818-6882 TX Card# 8719",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "3980feb6-dc3b-468e-89a0-30a5e0fd6c80",
+    "_rev": "3-975c8074569f58e51b4f2e2d740f3a21",
+    "id": "3980feb6-dc3b-468e-89a0-30a5e0fd6c80",
+    "account": "XXXXXX9409",
+    "date": "2016-07-13T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1106 07/13/16 008682 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "39a253f9-d57a-4281-ad05-7f9dbdbc6dc1",
+    "_rev": "3-0cfa64e69f2f03ee6b8b899013c23b4c",
+    "id": "39a253f9-d57a-4281-ad05-7f9dbdbc6dc1",
+    "account": "XXXXXX9409",
+    "date": "2018-07-02T05:00:00.000Z",
+    "description": "POS Debit - DDA AMAZON.COM POS DEB 2053 07/01/18 RH19YGRF SEATTLE WA Card# 2292",
+    "amount": 119.75,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "3aa9c5f0-1fb4-4719-9048-ff1b3b3d3a54",
+    "_rev": "3-52da6b63ef0b61e76320a8d6604ca796",
+    "id": "3aa9c5f0-1fb4-4719-9048-ff1b3b3d3a54",
+    "account": "XXXXXX9409",
+    "date": "2018-03-26T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 0939 03/26/18 445680 NTTA CUST SVC ONLIN 972-818-6882 TX Card# 2292",
+    "amount": 86.99,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "3c399a59-cf9f-4537-88bf-9b570c39de6a",
+    "_rev": "3-933c67de884b5e8042c95d7df2696235",
+    "id": "3c399a59-cf9f-4537-88bf-9b570c39de6a",
+    "account": "XXXXXX9409",
+    "date": "2015-06-17T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1650 06/16/15 092053 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 29.5,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "3f305653-3e8d-47ca-9fed-a92cb774892d",
+    "_rev": "3-07f581df06688943b8c378deb48017b4",
+    "id": "3f305653-3e8d-47ca-9fed-a92cb774892d",
+    "account": "XXXXXX9409",
+    "date": "2016-01-21T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1643 01/20/16 015899 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "43111c6a-60c2-468b-a6c6-ef68e702e601",
+    "_rev": "3-19b9143a0025c506369c1258c5957148",
+    "id": "43111c6a-60c2-468b-a6c6-ef68e702e601",
+    "account": "XXXXXX9409",
+    "date": "2015-05-28T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1651 05/27/15 060382 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "4416fa7a-bc84-4a65-80eb-fd20e29adf8a",
+    "_rev": "3-4113e82db024b4c014787015fc1153ed",
+    "id": "4416fa7a-bc84-4a65-80eb-fd20e29adf8a",
+    "account": "XXXXXX9409",
+    "date": "2013-02-12T06:00:00.000Z",
+    "description": "Amazon.com DBT CRD 17:51 02/11/13 020 AMZN.COM/BILLWA Card # 2502",
+    "amount": 63.5,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "458d8f0f-dc1f-4c98-b471-985c0a08169f",
+    "_rev": "3-6eb3b3fd8ad7703023fd3cc1071d10b1",
+    "id": "458d8f0f-dc1f-4c98-b471-985c0a08169f",
+    "account": "XXXXXX9409",
+    "date": "2018-01-02T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 0044 01/01/18 578160 NTTA AUTOCHARGE 972-818-6882 TX Card# 7064",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "4c26f3f9-76fa-407d-bc4e-6de5734ba734",
+    "_rev": "3-6a168983f00a36a02eb90c1c299bbef8",
+    "id": "4c26f3f9-76fa-407d-bc4e-6de5734ba734",
+    "account": "XXXXXX9409",
+    "date": "2016-03-28T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1131 03/27/16 098943 NTTA AUTOCHARGE 972-818-6882 TX Card# 8719",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "4dd823d6-07f8-4875-91f8-42a7700c61fc",
+    "_rev": "3-e378a37004900017b8f7e5368874aba1",
+    "id": "4dd823d6-07f8-4875-91f8-42a7700c61fc",
+    "account": "XXXXXX9409",
+    "date": "2017-07-26T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1023 07/26/17 978142 NTTA AUTOCHARGE 972-818-6882 TX Card# 7064",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "527ee5ee-c07c-4600-b940-a93d8c3848ca",
+    "_rev": "3-1e60c25202f7bbe0ed1081c6af8ea628",
+    "id": "527ee5ee-c07c-4600-b940-a93d8c3848ca",
+    "account": "XXXXXX9409",
+    "date": "2017-08-11T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1040 08/11/17 594001 NTTA AUTOCHARGE 972-818-6882 TX Card# 7064",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "53b9dc4a-1a13-419f-854e-a1c68e7b24db",
+    "_rev": "3-fd42046a23077f9825433c4d34e1d097",
+    "id": "53b9dc4a-1a13-419f-854e-a1c68e7b24db",
+    "account": "XXXXXX9409",
+    "date": "2015-10-21T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1711 10/20/15 044361 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "57557c6c-9c66-477e-9c1d-649c1036973b",
+    "_rev": "3-ecfbe783e3cf0ac15d059db72c893e67",
+    "id": "57557c6c-9c66-477e-9c1d-649c1036973b",
+    "account": "XXXXXX9409",
+    "date": "2016-09-06T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1700 09/02/16 085630 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 4.5,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "5ee03dbf-1917-4079-8157-86097a5815b7",
+    "_rev": "3-be458393f00e2fd5b287726975c972b9",
+    "id": "5ee03dbf-1917-4079-8157-86097a5815b7",
+    "account": "XXXXXX9409",
+    "date": "2016-12-20T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1657 12/19/16 031547 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "5ef8a6ca-ad57-41ba-a466-d4c59a07738f",
+    "_rev": "3-fa50d0bc3996e7fd8e737f23930e1e57",
+    "id": "5ef8a6ca-ad57-41ba-a466-d4c59a07738f",
+    "account": "XXXXXX9409",
+    "date": "2014-08-18T05:00:00.000Z",
+    "description": "POS Debit - DDA CALVIN KLEIN POS DEB 1106 08/17/14 539174 ALLEN TX Card# 4554",
+    "amount": 32.45,
+    "isDeposit": false,
+    "categorization": {
+      "category": "clothing",
+      "subcategory": "miscellaneous"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "62a6670d-931e-41a8-9625-9f895f32a658",
+    "_rev": "3-89a943180fcf40fbdd7184086e38f472",
+    "id": "62a6670d-931e-41a8-9625-9f895f32a658",
+    "account": "XXXXXX9409",
+    "date": "2017-09-07T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1036 09/07/17 416881 NTTA AUTOCHARGE 972-818-6882 TX Card# 7064",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "6409f292-9904-47f4-96a2-22ce7f45078b",
+    "_rev": "3-36e7fb07fab402370a3bad0ae109e94c",
+    "id": "6409f292-9904-47f4-96a2-22ce7f45078b",
+    "account": "XXXXXX9409",
+    "date": "2015-12-07T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1708 12/04/15 089513 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 6,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "64503c94-8d10-4328-a258-8c3e9f6f8987",
+    "_rev": "3-592d09f5a4fad5ea420bfda879f897be",
+    "id": "64503c94-8d10-4328-a258-8c3e9f6f8987",
+    "account": "XXXXXX9409",
+    "date": "2016-07-18T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1151 07/16/16 016096 NTTA CUST SVC ONLIN 972-818-6882 TX Card# 8863",
+    "amount": 13.92,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "64a4678b-76ad-4e45-96f0-d970128bb163",
+    "_rev": "3-c365cc2ce03c491041f4c6558f2d3a80",
+    "id": "64a4678b-76ad-4e45-96f0-d970128bb163",
+    "account": "XXXXXX9409",
+    "date": "2016-02-22T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 0933 02/20/16 053871 NTTA AUTOCHARGE 972-818-6882 TX Card# 8719",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "6869bea5-571a-4216-9d02-cc93a3495aa6",
+    "_rev": "3-9c2ca0f320fc99766f5625a3a384ea92",
+    "id": "6869bea5-571a-4216-9d02-cc93a3495aa6",
+    "account": "XXXXXX9409",
+    "date": "2016-02-22T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 2245 02/20/16 075076 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "6db60957-d516-4baa-9ddb-2573def28e5b",
+    "_rev": "3-1510fded0ec319dacac86ba58656e072",
+    "id": "6db60957-d516-4baa-9ddb-2573def28e5b",
+    "account": "XXXXXX9409",
+    "date": "2015-07-03T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1715 07/02/15 066926 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 9,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "6de318f1-af9f-415f-b1d2-db91293a3a81",
+    "_rev": "3-9252ea51797c0a087321ef279b614442",
+    "id": "6de318f1-af9f-415f-b1d2-db91293a3a81",
+    "account": "XXXXXX9409",
+    "date": "2017-05-22T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1739 05/19/17 001065 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "6e2a4b67-4ab5-4f47-a1c9-37db1a29e0c7",
+    "_rev": "3-bbe9750fc6f14b7b32a2c5569da7c0d4",
+    "id": "6e2a4b67-4ab5-4f47-a1c9-37db1a29e0c7",
+    "account": "XXXXXX9409",
+    "date": "2015-11-23T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1704 11/20/15 077965 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "6e7a77eb-5344-473b-b686-463d2178aca9",
+    "_rev": "3-ba1fc60832f0dc1ace7411ddf83e1558",
+    "id": "6e7a77eb-5344-473b-b686-463d2178aca9",
+    "account": "XXXXXX9409",
+    "date": "2018-07-02T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1117 07/02/18 612339 Farfetch Los Angeles CA Card# 2292",
+    "amount": 327.64,
+    "isDeposit": false,
+    "categorization": {
+      "category": "clothing",
+      "subcategory": "miscellaneous"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "6f3ca055-9ee4-4a13-9a3e-6b7c3efb19ca",
+    "_rev": "3-66e30d0da77aa9609381ae56c2e4f6ff",
+    "id": "6f3ca055-9ee4-4a13-9a3e-6b7c3efb19ca",
+    "account": "XXXXXX9409",
+    "date": "2017-12-04T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1208 12/02/17 851324 NTTA AUTOCHARGE 972-818-6882 TX Card# 7064",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "77986901-44da-4800-b3ae-08b14e858917",
+    "_rev": "3-3650ac37a1cdc145d2a604ffdf13dc1d",
+    "id": "77986901-44da-4800-b3ae-08b14e858917",
+    "account": "XXXXXX9409",
+    "date": "2016-08-24T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1700 08/23/16 097991 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "80f48eb6-df45-45f7-9b02-5102684d993c",
+    "_rev": "3-9b7e4e12cfcf35d79d5acb660357235e",
+    "id": "80f48eb6-df45-45f7-9b02-5102684d993c",
+    "account": "XXXXXX9409",
+    "date": "2017-03-21T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 2331 03/20/17 061433 AMAZON MKTPLACE PMT AMAZON MKTPLAWA Card# 8863",
+    "amount": 348.95,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "881f1e38-e9a5-4d4a-852d-ab8591cc9f9f",
+    "_rev": "3-9f3a21b94db5b97b5e29718608848d08",
+    "id": "881f1e38-e9a5-4d4a-852d-ab8591cc9f9f",
+    "account": "XXXXXX9409",
+    "date": "2015-06-29T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1104 06/27/15 028285 NTTA CUST SVC ONLIN 972-818-6882 TX Card# 8719",
+    "amount": 8.21,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "8923c84e-03e8-4383-8fd3-daf2b58b38f9",
+    "_rev": "3-1d114455f1bc8aab144046f341adaba2",
+    "id": "8923c84e-03e8-4383-8fd3-daf2b58b38f9",
+    "account": "XXXXXX9409",
+    "date": "2017-06-20T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1758 06/19/17 004455 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "8c35124a-4df3-472a-93a5-66f5ffc18aef",
+    "_rev": "3-7204b526710b4a361176ae5a727f8e9f",
+    "id": "8c35124a-4df3-472a-93a5-66f5ffc18aef",
+    "account": "XXXXXX9409",
+    "date": "2017-06-30T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1151 06/30/17 089157 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "92d5e2d1-abc8-4435-98ff-8036a24b49e4",
+    "_rev": "3-e8a4c4deabee3dce35c98fef622711e0",
+    "id": "92d5e2d1-abc8-4435-98ff-8036a24b49e4",
+    "account": "XXXXXX9409",
+    "date": "2015-10-05T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 2240 10/04/15 072391 BIKRAM YOGA DALLAS DALLAS TX Card# 8719",
+    "amount": 20,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "93c36a3a-55c7-4860-a3c9-063c81c4f79c",
+    "_rev": "3-a8edfaf0fb43af5eeec3fe236a98bc04",
+    "id": "93c36a3a-55c7-4860-a3c9-063c81c4f79c",
+    "account": "XXXXXX9409",
+    "date": "2015-03-02T06:00:00.000Z",
+    "description": "POS Debit - DDA AMAZON.COM POS DEB 2137 03/01/15 QHTPQIRN SEATTLE WA Card# 8719",
+    "amount": 66.39,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "999fcf2b-ed89-4e76-b3ed-139185658408",
+    "_rev": "3-f22da5b1693d084ba3cec348571eeacc",
+    "id": "999fcf2b-ed89-4e76-b3ed-139185658408",
+    "account": "XXXXXX9409",
+    "date": "2018-07-19T05:00:00.000Z",
+    "description": "POS Debit - DDA AMAZON.COM POS DEB 0503 07/19/18 38AQQ06B SEATTLE WA Card# 2292",
+    "amount": 275.31,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "9aef9b71-4a38-4d71-939f-9b7fc001259c",
+    "_rev": "3-cd0f5e5159f016c6ed8aaf7034295d9d",
+    "id": "9aef9b71-4a38-4d71-939f-9b7fc001259c",
+    "account": "XXXXXX9409",
+    "date": "2017-04-19T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1808 04/18/17 077422 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "9bf32e42-49fc-4399-b278-6b0f25a64aad",
+    "_rev": "8-137e2f4f3a17ea245397d619cea39741",
+    "id": "9bf32e42-49fc-4399-b278-6b0f25a64aad",
+    "account": "XXXXXX9409",
+    "date": "2013-08-06T05:00:00.000Z",
+    "description": "DDA REGULAR DEPOSIT \\SERIAL",
+    "amount": 1075.1,
+    "isDeposit": true,
+    "categorization": { "category": "income", "subcategory": "rent" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "9f2749c8-4408-487b-861c-8f990957acec",
+    "_rev": "3-ab0ae1bd2a647767dc8020aad1a023b5",
+    "id": "9f2749c8-4408-487b-861c-8f990957acec",
+    "account": "XXXXXX9409",
+    "date": "2017-05-15T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1312 05/15/17 076399 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "a28ed7ac-0240-4f1b-a1bc-f09083f0811e",
+    "_rev": "3-70889eed375a0ebdd6546d8daa06d112",
+    "id": "a28ed7ac-0240-4f1b-a1bc-f09083f0811e",
+    "account": "XXXXXX9409",
+    "date": "2016-11-21T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 2243 11/19/16 037477 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "a3ca9b1d-26ac-48e6-93dc-1706d3cbf9bb",
+    "_rev": "3-3ec4d8d99b4e82117e1d0482f4d60ca5",
+    "id": "a3ca9b1d-26ac-48e6-93dc-1706d3cbf9bb",
+    "account": "XXXXXX9409",
+    "date": "2017-03-21T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 2030 03/20/17 045960 AMAZON MKTPLACE PMT AMAZON MKTPLAWA Card# 8863",
+    "amount": 187,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "a6698bea-40b5-405b-bf90-b9ab9a2c35e0",
+    "_rev": "3-7c65410e297252b300c53aed83587e94",
+    "id": "a6698bea-40b5-405b-bf90-b9ab9a2c35e0",
+    "account": "XXXXXX9409",
+    "date": "2016-09-06T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1108 09/05/16 043130 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "a881ac95-323e-4440-82f9-8eada299b2c2",
+    "_rev": "3-e981e6dd1740a9aaf1f6afb3e18b6f2d",
+    "id": "a881ac95-323e-4440-82f9-8eada299b2c2",
+    "account": "XXXXXX9409",
+    "date": "2015-06-29T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1104 06/27/15 028284 NTTA CUST SVC ONLIN 972-818-6882 TX Card# 8719",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "acac447d-f95b-40d1-bb1e-663e0da8ed63",
+    "_rev": "3-0fa83fff0b7ca6e7c63e98965d890fbb",
+    "id": "acac447d-f95b-40d1-bb1e-663e0da8ed63",
+    "account": "XXXXXX9409",
+    "date": "2017-04-06T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1230 04/06/17 079799 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "acb091fd-1acb-4db2-94ab-efe308f45856",
+    "_rev": "3-a4ec829c356eb5b23747749f834d3199",
+    "id": "acb091fd-1acb-4db2-94ab-efe308f45856",
+    "account": "XXXXXX9409",
+    "date": "2016-12-19T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1059 12/17/16 084917 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "b0e6a35d-2f4f-43a2-85f0-739336fbb47b",
+    "_rev": "3-6a8f9d2843b6bc702857676df5c440ae",
+    "id": "b0e6a35d-2f4f-43a2-85f0-739336fbb47b",
+    "account": "XXXXXX9409",
+    "date": "2018-08-02T05:00:00.000Z",
+    "description": "POS Recurring Debit - DDA DBT CRD 0941 08/02/18 445555 ABC*WORLD GYM 888-8279262 TN Card# 2292",
+    "amount": 92.86,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "b5c90679-d710-4528-b4a2-7a6fd3ae6771",
+    "_rev": "3-2957c3ffc0375883ebd87226c243e166",
+    "id": "b5c90679-d710-4528-b4a2-7a6fd3ae6771",
+    "account": "XXXXXX9409",
+    "date": "2015-08-19T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1718 08/18/15 033417 BIKRAM YOGA DALLAS DALLAS TX Card# 8719",
+    "amount": 49,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "b9376df0-7460-46e7-aab6-455fa8b1be09",
+    "_rev": "3-d83cdc63954f3d7ab44f77a05fe14093",
+    "id": "b9376df0-7460-46e7-aab6-455fa8b1be09",
+    "account": "XXXXXX9409",
+    "date": "2018-10-02T05:00:00.000Z",
+    "description": "POS Recurring Debit - DDA DBT CRD 0204 10/02/18 198233 ABC*WORLD GYM 888-8279262 TN Card# 2292",
+    "amount": 92.86,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "bc024ce9-a2a7-4545-b069-4fd68fd31391",
+    "_rev": "3-fbaeefa9a8de0098de0c31e037b17daa",
+    "id": "bc024ce9-a2a7-4545-b069-4fd68fd31391",
+    "account": "XXXXXX9409",
+    "date": "2017-03-20T05:00:00.000Z",
+    "description": "POS Debit - DDA AMAZON.COM POS DEB 1021 03/19/17 DGGY9MHK SEATTLE WA Card# 8863",
+    "amount": 642.24,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "bdc548ee-bdee-4fcf-b86c-26bd0c4ac599",
+    "_rev": "3-606e8e833fbb89a0821ccf0edfcbfd99",
+    "id": "bdc548ee-bdee-4fcf-b86c-26bd0c4ac599",
+    "account": "XXXXXX9409",
+    "date": "2017-02-21T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 2301 02/19/17 016693 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "bf71de07-1332-4b20-8767-66e54786a990",
+    "_rev": "3-2361ef2af15abc0563a77b4ad1dfa9be",
+    "id": "bf71de07-1332-4b20-8767-66e54786a990",
+    "account": "XXXXXX9409",
+    "date": "2018-07-02T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 2038 07/01/18 496774 8546 WORLD GYM MUSI NASHVILLE TN Card# 2292",
+    "amount": 54.61,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "bfd150a6-cb36-4b6c-8eab-b3da36704523",
+    "_rev": "3-59fdbacb1c978f7c5df1d44eae2a79fe",
+    "id": "bfd150a6-cb36-4b6c-8eab-b3da36704523",
+    "account": "XXXXXX9409",
+    "date": "2018-07-02T05:00:00.000Z",
+    "description": "POS Recurring Debit - DDA DBT CRD 1129 07/02/18 202320 ABC*WORLD GYM 888-8279262 TN Card# 2292",
+    "amount": 92.86,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "c082de7a-9dac-4bcd-b609-05fb16401c3e",
+    "_rev": "3-c9479fcfabc5cb3ef299cd1a608eaea9",
+    "id": "c082de7a-9dac-4bcd-b609-05fb16401c3e",
+    "account": "XXXXXX9409",
+    "date": "2015-11-10T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 0941 11/10/15 071540 NTTA CUST SVC ONLIN 972-818-6882 TX Card# 8719",
+    "amount": 18,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "c1b79d8e-d670-4c34-ac66-4f7441abff2d",
+    "_rev": "3-831a67644b3365598dae63039e79d057",
+    "id": "c1b79d8e-d670-4c34-ac66-4f7441abff2d",
+    "account": "XXXXXX9409",
+    "date": "2017-03-03T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1043 03/03/17 022576 NTTA AUTOCHARGE 972-818-6882 TX Card# 8863",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "c2be249f-41b7-4113-922e-088ab6ed0291",
+    "_rev": "3-1eb73aaf25159577b9f1258df1ad045c",
+    "id": "c2be249f-41b7-4113-922e-088ab6ed0291",
+    "account": "XXXXXX9409",
+    "date": "2018-07-02T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1426 07/02/18 042469 NTTA CUST SVC ONLIN 972-818-6882 TX Card# 2292",
+    "amount": 42.61,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "c4d65b87-491b-48ca-a074-08f9ec0aa914",
+    "_rev": "3-a200ca39f866ba6bb205dddf8b876f55",
+    "id": "c4d65b87-491b-48ca-a074-08f9ec0aa914",
+    "account": "XXXXXX9409",
+    "date": "2015-06-08T05:00:00.000Z",
+    "description": "POS Debit - DDA AMAZON.COM POS DEB 1619 06/07/15 WZEQ4SER SEATTLE WA Card# 8719",
+    "amount": 81.13,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "c501e626-ebab-493e-938f-97084592a2ee",
+    "_rev": "3-0b329e310f7111fb6c3008cfcd625892",
+    "id": "c501e626-ebab-493e-938f-97084592a2ee",
+    "account": "XXXXXX9409",
+    "date": "2017-05-30T05:00:00.000Z",
+    "description": "POS Debit - DDA AMAZON.COM POS DEB 1738 05/27/17 LOAUPYNF SEATTLE WA Card# 8863",
+    "amount": 36.04,
+    "isDeposit": false,
+    "categorization": { "category": "recreation", "subcategory": "books" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "c512b649-4712-4873-a08e-2c123e1db0ea",
+    "_rev": "3-9db3e0cedcee24ae97eae9358f49c231",
+    "id": "c512b649-4712-4873-a08e-2c123e1db0ea",
+    "account": "XXXXXX9409",
+    "date": "2018-09-04T05:00:00.000Z",
+    "description": "POS Recurring Debit - DDA DBT CRD 0005 09/03/18 584310 ABC*WORLD GYM 888-8279262 TN Card# 2292",
+    "amount": 92.86,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "c808facf-9127-47eb-96c3-8679168a7305",
+    "_rev": "3-de3d952dd1b4febfa2f07e6556deca58",
+    "id": "c808facf-9127-47eb-96c3-8679168a7305",
+    "account": "XXXXXX9409",
+    "date": "2017-12-04T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 2225 12/01/17 896685 Farfetch Los Angeles CA Card# 7064",
+    "amount": 619.71,
+    "isDeposit": false,
+    "categorization": {
+      "category": "clothing",
+      "subcategory": "miscellaneous"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "c9b9fbf4-dd54-433d-a6ee-51d78dcecbc7",
+    "_rev": "3-037e4b669453efe5260bc0ac6b61fc18",
+    "id": "c9b9fbf4-dd54-433d-a6ee-51d78dcecbc7",
+    "account": "XXXXXX9409",
+    "date": "2015-10-19T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1154 10/18/15 010122 NTTA AUTOCHARGE 972-818-6882 TX Card# 8719",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "cf6cbafc-9a0e-4ce7-9016-8b83018e3c53",
+    "_rev": "3-5916310051fd96be43e1f23c9d7d6982",
+    "id": "cf6cbafc-9a0e-4ce7-9016-8b83018e3c53",
+    "account": "XXXXXX9409",
+    "date": "2016-11-21T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 0936 11/19/16 032355 NTTA CUST SVC ONLIN 972-818-6882 TX Card# 8863",
+    "amount": 38.66,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "d3fe5c21-a59c-4c94-a65a-3b30340a3f1c",
+    "_rev": "3-ea8059c316d98ed3d1ad4688e3c34fd0",
+    "id": "d3fe5c21-a59c-4c94-a65a-3b30340a3f1c",
+    "account": "XXXXXX9409",
+    "date": "2018-07-16T05:00:00.000Z",
+    "description": "POS Debit - DDA AMAZON.COM POS DEB 2055 07/13/18 3AFUFUA9 SEATTLE WA Card# 2292",
+    "amount": 99.62,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "d5b097d5-0bf9-4bf5-be80-7afcf795bd6e",
+    "_rev": "3-74dda0a9d04ba3d7f0ab905b5fdc16fe",
+    "id": "d5b097d5-0bf9-4bf5-be80-7afcf795bd6e",
+    "account": "XXXXXX9409",
+    "date": "2018-08-15T05:00:00.000Z",
+    "description": "POS Recurring Debit - DDA DBT CRD 0206 08/15/18 809354 ABC*WORLD GYM 888-8279262 TN Card# 2292",
+    "amount": 30,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "d5b937aa-137a-47ed-b7af-22559693222e",
+    "_rev": "3-e84e86286fcae97507502208da794638",
+    "id": "d5b937aa-137a-47ed-b7af-22559693222e",
+    "account": "XXXXXX9409",
+    "date": "2015-06-08T05:00:00.000Z",
+    "description": "POS Debit - DDA AMAZON.COM POS DEB 2014 06/07/15 WZEM3IRJ SEATTLE WA Card# 8719",
+    "amount": 121.81,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "dc0e979d-e2d1-4447-bf58-21bb98b70828",
+    "_rev": "3-743e4015600bc72893ff0b6a9617335a",
+    "id": "dc0e979d-e2d1-4447-bf58-21bb98b70828",
+    "account": "XXXXXX9409",
+    "date": "2015-11-04T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1652 11/03/15 051229 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 10,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "e40c1fd5-2308-4ec3-9f63-85efe87f285d",
+    "_rev": "3-b5d99c8687a3cf14fc81b9bab408c6b8",
+    "id": "e40c1fd5-2308-4ec3-9f63-85efe87f285d",
+    "account": "XXXXXX9409",
+    "date": "2016-04-21T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1703 04/20/16 012136 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "f7b87123-1355-413a-9c27-0724440940f9",
+    "_rev": "3-e998f4946778448c6aae6d655d52fb20",
+    "id": "f7b87123-1355-413a-9c27-0724440940f9",
+    "account": "XXXXXX9409",
+    "date": "2017-01-20T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1644 01/19/17 098125 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8863",
+    "amount": 99,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "fb336974-c1a9-426b-8eb5-75b2f6e130d0",
+    "_rev": "3-3cc2339beebaa4a7ab134be91e7bd088",
+    "id": "fb336974-c1a9-426b-8eb5-75b2f6e130d0",
+    "account": "XXXXXX9409",
+    "date": "2015-06-03T05:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1650 06/02/15 074633 BIKRAM S YOGA COLLE RICHARDSON TX Card# 8719",
+    "amount": 15.5,
+    "isDeposit": false,
+    "categorization": { "category": "health", "subcategory": "gym" },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "fba31b56-b0de-4381-9ec1-79d4fe929849",
+    "_rev": "3-79b9342cece2c43c5d8c283ce0f086a9",
+    "id": "fba31b56-b0de-4381-9ec1-79d4fe929849",
+    "account": "XXXXXX9409",
+    "date": "2013-09-30T05:00:00.000Z",
+    "description": "CALVIN KLEIN POS DEB 14:35 09/28/13 858 ALLEN TX Card # 9045",
+    "amount": 40.18,
+    "isDeposit": false,
+    "categorization": {
+      "category": "clothing",
+      "subcategory": "miscellaneous"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "fc990414-4fbe-431f-913e-8ebf0e53a3f7",
+    "_rev": "3-f552287c6a522dba4571695978be6a3f",
+    "id": "fc990414-4fbe-431f-913e-8ebf0e53a3f7",
+    "account": "XXXXXX9409",
+    "date": "2015-11-09T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 0933 11/07/15 069300 NTTA AUTOCHARGE 972-818-6882 TX Card# 8719",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  },
+  {
+    "_id": "fe9d4e1b-41d9-49ea-ab3d-6f986c885101",
+    "_rev": "3-a17e676956743fddbf60b03e80a536c0",
+    "id": "fe9d4e1b-41d9-49ea-ab3d-6f986c885101",
+    "account": "XXXXXX9409",
+    "date": "2015-11-23T06:00:00.000Z",
+    "description": "POS ATM DEBIT DBT CRD 1008 11/23/15 041569 NTTA AUTOCHARGE 972-818-6882 TX Card# 8719",
+    "amount": 40,
+    "isDeposit": false,
+    "categorization": {
+      "category": "transportation",
+      "subcategory": "tolls/parking"
+    },
+    "tenantId": "1a845694-2e9f-4619-aa42-6e5bc2394893"
+  }
+]

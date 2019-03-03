@@ -1,12 +1,16 @@
 import deepFreeze from "deep-freeze";
 import { Event } from "./event";
 
+const name =
+  process.env.transactionSplitEvent ||
+  process.env.npm_package_config_transactionSplitEvent;
+
 const TransactionSplitEvent = class extends Event {
   constructor(originalTransactionId, newTransaction) {
-    super({ name: "checking-account.transaction-split", version: 1 });
+    super({ name, version: 1 });
     this.message = {
       originalTransactionId,
-      newTransaction: Object.assign({}, newTransaction)
+      transaction: Object.assign({}, newTransaction)
     };
     deepFreeze(this);
   }

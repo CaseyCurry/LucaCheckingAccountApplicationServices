@@ -5,7 +5,6 @@ import { TransactionCategorizedEvent } from "../events/transaction-categorized-e
 // TODO: unit test
 const Transaction = class extends BaseAggregate {
   constructor({
-    _rev,
     id,
     tenantId,
     account,
@@ -17,7 +16,7 @@ const Transaction = class extends BaseAggregate {
     relatedTransaction,
     ignoreInReports
   }) {
-    super(_rev);
+    super();
     this.id = id;
     this.tenantId = tenantId;
     this.account = account;
@@ -40,7 +39,8 @@ const Transaction = class extends BaseAggregate {
         this.tenantId,
         this.categorization,
         this.amount,
-        this.isDeposit
+        this.isDeposit,
+        this.date
       )
     );
   }

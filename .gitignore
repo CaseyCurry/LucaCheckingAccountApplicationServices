@@ -1,6 +1,8 @@
-/dist/*
+/dist
+/package
 /node_modules/
 *.log
 /spec/coverage/*
 .nyc_output
-secret.js
+.serverless
+/config/secrets*

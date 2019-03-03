@@ -1,4 +1,4 @@
-const CategorizationRecommender = {
+const categorizationRecommender = {
   recommend: transactions => {
     let words = groupByWords(transactions);
     let groups = mergeWords(words);
@@ -15,7 +15,7 @@ const CategorizationRecommender = {
   }
 };
 
-export { CategorizationRecommender };
+export { categorizationRecommender };
 
 const groupByWords = transactions => {
   const words = {};
