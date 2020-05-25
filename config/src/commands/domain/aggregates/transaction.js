@@ -1,5 +1,4 @@
 import { BaseAggregate } from "./base-aggregate";
-import { Categorization } from "../value-objects/categorization";
 import { TransactionCategorizedEvent } from "../events/transaction-categorized-event";
 
 // TODO: unit test
@@ -24,9 +23,7 @@ const Transaction = class extends BaseAggregate {
     this.description = description;
     this.amount = amount;
     this.isDeposit = isDeposit;
-    if (categorization) {
-      this.categorization = Categorization(categorization);
-    }
+    this.categorization = categorization;
     this.relatedTransaction = relatedTransaction;
     this.ignoreInReports = ignoreInReports;
   }
